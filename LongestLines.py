@@ -1,8 +1,9 @@
 
 
 #read in file, split to list
-content = [i.rstrip() for i in test_cases]
 test_cases = open(sys.argv[1], 'r')
+content = [i.rstrip() for i in test_cases]
+
 
 #pop off first value as a number
 num = content.pop(0)
